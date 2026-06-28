@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "staff_srvs",
+  "info": {
+    "singularName": "staff-srv",
+    "pluralName": "staff-srvs",
+    "displayName": "Staff_srv"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nickname": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

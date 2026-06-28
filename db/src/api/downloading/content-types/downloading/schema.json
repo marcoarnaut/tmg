@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloadings",
+  "info": {
+    "singularName": "downloading",
+    "pluralName": "downloadings",
+    "displayName": "Downloading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Desc": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

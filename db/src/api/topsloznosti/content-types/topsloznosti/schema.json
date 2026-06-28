@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topsloznostis",
+  "info": {
+    "singularName": "topsloznosti",
+    "pluralName": "topsloznostis",
+    "displayName": "topsloznosti"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "levelname": {
+      "type": "string",
+      "required": true
+    },
+    "authorname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

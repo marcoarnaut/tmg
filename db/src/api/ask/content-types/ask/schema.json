@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asks",
+  "info": {
+    "singularName": "ask",
+    "pluralName": "asks",
+    "displayName": "Ask"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Desc": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

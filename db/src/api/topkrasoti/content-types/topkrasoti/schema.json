@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topkrasotis",
+  "info": {
+    "singularName": "topkrasoti",
+    "pluralName": "topkrasotis",
+    "displayName": "topkrasoti"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "levelname": {
+      "type": "string",
+      "required": true
+    },
+    "authorname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

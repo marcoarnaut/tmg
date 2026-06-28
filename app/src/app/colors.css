@@ -1,0 +1,17 @@
+:root {
+  --bg-page: #555555;
+  --bg-card: #4d4d4d;
+  --bg-card-hover: #5a5a5a;
+  --border: #424242;
+  --border-light: #5a5a5a;
+  --text: #ffffff;
+  --text-secondary: #cccccc;
+  --overlay-dark: 0.75;
+  --vignette-start: 40%;
+  --vignette-end: 100%;
+}
+
+@theme inline {
+  --color-bg-page: var(--bg-page);
+  --color-bg-card: var(--bg-card);
+}

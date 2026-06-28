@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #555555;
+  --bg-card: rgba(50, 50, 50, 0.85);
+  --bg-header: rgba(40, 40, 40, 0.85);
+  --bg-card-hover: rgba(60, 60, 60, 0.85);
+  --bg-leaderboard: rgba(40, 40, 40, 0.85);
+  --bg-leaderboard-hover: rgba(50, 50, 50, 0.85);
+  --bg-button: rgba(60, 60, 60, 0.851);
+  --bg-button-hover: rgba(90, 90, 90, 0.85);
+  --border: #424242;
+  --border-light: #5a5a5a;
+  --text: #ffffff;
+  --text-secondary: #cccccc;
+  --overlay-dark: 0.75;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text);
+  font-family: "Source Code Pro", monospace;
+}
+
+a {
+  color: var(--text);
+}
+
+.bg-card {
+  background: var(--bg-card);
+}
+
+.bg-header {
+  background: var(--bg-header);
+}
+
+.bg-card-hover {
+  background: var(--bg-card-hover);
+}
+
+.bg-leaderboard {
+  background: var(--bg-leaderboard);
+}
+
+.bg-leaderboard-hover {
+  background: var(--bg-leaderboard-hover);
+}
+
+.bg-button {
+  cursor: pointer;
+  background: var(--bg-button);
+}
+
+.bg-button-hover {
+  box-shadow: 0 0 15px rgba(150, 150, 150, 1);
+  background: var(--bg-button-hover);
+}
+
+.bg-page {
+  background-image: url('/bg1.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 100vh;
+}
+
+.bg-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+.bg-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bg-page > * {
+  position: relative;
+  z-index: 2;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
